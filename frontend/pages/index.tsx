@@ -50,7 +50,7 @@ const index = () => {
       console.log("I am inside");
       const savedEntries = localStorage.getItem("cryptoEntry");
       const initialEntries = savedEntries ? JSON.parse(savedEntries) : {};
-      dispatch(add(initialEntries));
+      if (Object.keys(initialEntries).length > 0) dispatch(add(initialEntries));
     }
     console.log("fetched entries are ->", latestEntries);
   }, [latestEntries]);
@@ -69,7 +69,7 @@ const index = () => {
         justifyContent: "center",
       }}
     >
-        <h1>Recent 20 price entries for {coin}</h1>
+      <h1>Recent 20 price entries for {coin}</h1>
 
       <div
         className="table-container"
