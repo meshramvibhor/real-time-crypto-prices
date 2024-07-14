@@ -12,6 +12,8 @@ Note : Backend server will run on port 5000. Used cron job to fetch data every 5
 
 
 For frontens:
+
+
 Pre requisutes : 
   1. node v21
 
