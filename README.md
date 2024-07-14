@@ -1,3 +1,11 @@
+# Steps :
+  1. Run backend server first.
+  2. Then run frontend server.
+
+Note - You may see empty table for a wile, that can happen due to rate limiter in crypto prices api call, please wait for a while until it reaches cool down timer.
+
+
+
 # For Backend: 
 
 ## Pre-requisites: 
